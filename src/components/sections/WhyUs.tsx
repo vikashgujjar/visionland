@@ -96,7 +96,7 @@ export default function WhyUs({
       id="why"
       style={{
         background: whiteBg ? '#ffffff' : 'linear-gradient(180deg, #f0f8ff 0%, #e4f0fc 100%)',
-        padding: hideHeader ? '3rem 0 6rem' : '6rem 0',
+        padding: hideHeader ? '3rem 0 3rem' : '3rem 0',
         position: 'relative',
         overflow: 'hidden',
       }}
@@ -121,9 +121,9 @@ export default function WhyUs({
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
             {/* LEFT: Text with buttons */}
             <div className="reveal">
-              <span className="badge-light mb-5 block">Why Choose Visionland</span>
+              <span className="badge-light mb-0 block">Why Choose Visionland?</span>
               <h2
-                className="font-display font-800 leading-tight mt-4"
+                className="font-display font-800 leading-tight mt-3 mb-2"
                 style={{
                   fontSize: 'clamp(2rem, 4vw, 3rem)',
                   color: 'var(--text-h)',
@@ -132,13 +132,13 @@ export default function WhyUs({
                 What Matters When <span className="gt-brand">Choosing a Surveyor</span>
               </h2>
               <p
-                className="mt-5 text-base leading-relaxed"
+                className="mt-0 text-base leading-relaxed"
                 style={{ color: 'var(--text-body)' }}
               >
                 Choosing the right land survey company isn't just about price — it directly affects legal boundaries, construction accuracy,
                 and future property disputes. Here's what sets us apart.
               </p>
-              <div className="mt-8 flex items-center gap-5">
+              <div className="mt-5 flex items-center gap-5">
                 <a href="#contact" className="btn-brand px-7 py-3.5 rounded-xl text-sm flex items-center gap-2">
                   Get a Free Quote
                 </a>

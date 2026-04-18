@@ -13,7 +13,7 @@ export default function About({
     return (
       <section
         id="about"
-        className="relative py-24 lg:py-32 overflow-hidden bg-white"
+        className="relative py-12 lg:py-12 overflow-hidden bg-white"
       >
         {/* Background Accents */}
         <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-50/30 -skew-x-12 transform origin-top"></div>
@@ -73,7 +73,7 @@ export default function About({
               <div className="relative">
                 <div className="rounded-[3rem] overflow-hidden shadow-2xl aspect-[4/5] relative">
                   <img
-                    src="/about_surveyor.png"
+                    src="/about_surveyor.webp"
                     alt="Visionland Precision"
                     className="w-full h-full object-cover"
                   />
@@ -134,7 +134,7 @@ export default function About({
             {/* Left Box */}
             <div className="relative min-h-[400px] lg:min-h-full overflow-hidden">
               <img
-                src="/about_surveyor.png"
+                src="/about_surveyor.webp"
                 alt="Visionland Team"
                 className="w-full h-full object-cover"
               />

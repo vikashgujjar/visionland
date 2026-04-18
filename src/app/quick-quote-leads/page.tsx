@@ -38,13 +38,13 @@ export default function QuickQuoteLeadsPage() {
               </p>
 
               <div className="flex gap-4">
-                <img src="/itunes-logo.png" alt="iTunes Store" className="h-16 object-contain" />
+                <img src="/itunes-logo.webp" alt="iTunes Store" className="h-16 object-contain" />
               </div>
             </div>
 
             <div className="relative reveal" style={{ transitionDelay: '0.2s' }}>
               <div className="aspect-square h-auto rounded-[2.5rem] overflow-hidden shadow-2xl bg-gray-50 flex items-center justify-center p-8">
-                <img loading="lazy" src="/successful_realtors.jpg" className="w-full h-auto object-contain rounded-2xl" alt="Successful Realtors Use Quick Quoter" />
+                <img loading="lazy" src="/successful_realtors.webp" className="w-full h-auto object-contain rounded-2xl" alt="Successful Realtors Use Quick Quoter" />
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@ export default function QuickQuoteLeadsPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-20 flex-col-reverse lg:flex-row">
             <div className="relative reveal lg:order-1">
               <div className="rounded-[2.5rem] overflow-hidden shadow-2xl bg-gray-50 flex items-center justify-center p-8">
-                <img loading="lazy" src="/visionland-quick-quoter-app.jpg" className="w-full h-auto object-contain rounded-2xl" alt="Visionland Quick Quoter App" />
+                <img loading="lazy" src="/visionland-quick-quoter-app.webp" className="w-full h-auto object-contain rounded-2xl" alt="Visionland Quick Quoter App" />
               </div>
             </div>
             <div className="reveal lg:order-2" style={{ transitionDelay: '0.2s' }}>

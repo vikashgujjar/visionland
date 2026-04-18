@@ -16,9 +16,9 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-5">
               <img
-                src="/logo.png"
+                src="/Whitelogo.webp"
                 alt="Visionland"
-                className="w-32 object-contain logo-dark" loading="lazy"
+                className="w-32 object-contain" loading="lazy"
               />
             </div>
             <p className="text-gray-500 text-sm leading-relaxed mb-4">

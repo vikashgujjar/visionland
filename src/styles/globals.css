@@ -561,3 +561,13 @@ h5 {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* ── PROGRESS ANIMATION ── */
+@keyframes progress {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.animate-progress {
+  animation: progress 2.5s linear forwards;
+}

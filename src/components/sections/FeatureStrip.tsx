@@ -73,7 +73,7 @@ const features = [
 
 export default function FeatureStrip() {
   return (
-    <section style={{ background: 'linear-gradient(135deg,#ddeeff,#eaf4ff)', padding: '4rem 0' }}>
+    <section style={{ background: 'linear-gradient(135deg,#ddeeff,#eaf4ff)', padding: '3rem 0' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
           {features.map((feature, index) => (

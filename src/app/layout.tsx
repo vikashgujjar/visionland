@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   title: 'Visionland',
   description: 'Intelligence is Not Artificial',
   icons: {
-    icon: '/logo.png',
-    apple: '/logo.png',
+    icon: '/logo.webp',
+    apple: '/logo.webp',
   },
 }
 
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/logo.webp" />
       </head>
       <body className={inter.className}>
         <RevealOnScroll />

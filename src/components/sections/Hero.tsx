@@ -107,11 +107,11 @@ export default function Hero() {
                                              <span style={{ color: '#1a3a5c' }}>Artificial</span>
                                         </h1>
 
-                                        <img
-                                             src="/logo.png"
+                                        {/* <img
+                                             src="/logo.webp"
                                              alt="Visionland"
                                              className={`w-[180px] object-contain transition sm:block hidden`} loading="lazy"
-                                        />
+                                        /> */}
                                    </div>
 
                                    <p className="text-lg leading-relaxed max-w-xl animate-fadeUp" style={{ color: '#2d4a63', animationDelay: '0.2s' }}>
@@ -228,10 +228,10 @@ export default function Hero() {
                                    </div>
 
                                    {/* Floating Badges Below Carousel */}
-                                   <div className="flex gap-3 mt-4 justify-center">
+                                   {/* <div className="flex gap-3 mt-4 justify-center">
                                         <div className="px-3.5 py-2 rounded-2xl flex items-center gap-2" style={{ background: 'rgba(0,79,128,0.09)', border: '1px solid rgba(0,79,128,0.22)', animation: 'glowLight 2.8s ease-in-out infinite' }}>
                                              <div className="w-5 h-5 flex items-center justify-center">
-                                                  <img src="/logo.png" alt="Visionland" className="w-full h-full object-contain" style={{ filter: 'brightness(0) saturate(100%) invert(14%) sepia(80%) saturate(600%) hue-rotate(185deg) brightness(80%) contrast(115%)' }} loading="lazy" />
+                                                  <img src="/logo.webp" alt="Visionland" className="w-full h-full object-contain" style={{ filter: 'brightness(0) saturate(100%) invert(14%) sepia(80%) saturate(600%) hue-rotate(185deg) brightness(80%) contrast(115%)' }} loading="lazy" />
                                              </div>
                                              <span className="text-xs font-display font-700" style={{ color: '#004f80' }}>Licensed &amp; Certified</span>
                                         </div>
@@ -239,7 +239,7 @@ export default function Hero() {
                                              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
                                              <span className="text-xs font-display font-700" style={{ color: '#1a3a5c' }}>GPS + Drone Technology</span>
                                         </div>
-                                   </div>
+                                   </div> */}
                               </div>
                          </div>
                     </div>

@@ -68,7 +68,7 @@ export default function Contact({ whiteBg = false }: { whiteBg?: boolean }) {
       email: formData.email,
       serviceType: formData.serviceType,
       message: formData.message,
-      mail_to: "doug@Visionlandlandsurvey.com,michael@Visionlandlandsurvey.com",
+      mail_to: "Doug@visionlandservice.com,Michael@visionlandservice.com,dawn@visionlandservice.com",
     };
 
     try {
@@ -95,6 +95,7 @@ export default function Contact({ whiteBg = false }: { whiteBg?: boolean }) {
           serviceType: '',
           message: '',
         });
+        setErrors({});
       } else {
         Swal.fire("Error", "Failed to send message. Please try again.", "error");
       }
@@ -109,13 +110,13 @@ export default function Contact({ whiteBg = false }: { whiteBg?: boolean }) {
   return (
     <section
       id="contact"
-      className={`relative py-24 lg:py-32 overflow-hidden ${whiteBg ? 'bg-white' : 'bg-gray-50'}`}
+      className={`relative py-12 lg:py-12 overflow-hidden ${whiteBg ? 'bg-white' : 'bg-gray-50'}`}
     >
       <div className="absolute inset-0 dot-bg-light opacity-30"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-          
+
           {/* Left info area - 5 cols */}
           <div className="lg:col-span-5 space-y-10 reveal">
             <div>
@@ -167,7 +168,7 @@ export default function Contact({ whiteBg = false }: { whiteBg?: boolean }) {
                 </div>
                 <div>
                   <div className="text-sm font-700 text-navy-dark uppercase tracking-wider mb-1">Office</div>
-                  <div className="text-base font-600 text-gray-800">PO BOX 941186, <br/>MAITLAND FLORIDA 32794</div>
+                  <div className="text-base font-600 text-gray-800">PO BOX 941186, <br />MAITLAND FLORIDA 32794</div>
                 </div>
               </div>
             </div>
@@ -180,7 +181,7 @@ export default function Contact({ whiteBg = false }: { whiteBg?: boolean }) {
               <div className="absolute -top-20 -right-20 w-64 h-64 bg-brand/10 rounded-full blur-3xl pointer-events-none"></div>
 
               <h3 className="font-display font-800 text-2xl mb-8 text-navy-dark border-b border-gray-100 pb-6">Request Your Quote</h3>
-              
+
               <form onSubmit={handleContactSubmit} className="space-y-6 relative" noValidate>
                 <div>
                   <label className="text-sm font-700 text-navy-dark mb-2 block">Full Name</label>

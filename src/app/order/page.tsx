@@ -198,7 +198,7 @@ export default function OrderPage() {
     const { name, value, type } = e.target;
     const val = type === 'checkbox' ? (e.target as HTMLInputElement).checked : value;
     setFormData((prev: any) => ({ ...prev, [name]: val }));
-    
+
     // Clear error when user types
     if (errors[name]) {
       setErrors((prev: any) => {
@@ -211,7 +211,7 @@ export default function OrderPage() {
 
   const validateForm = () => {
     const newErrors: any = {};
-    
+
     // Requester Info
     if (!formData.name.trim()) newErrors.name = 'Full name is required';
     if (!formData.email.trim()) {
@@ -220,7 +220,7 @@ export default function OrderPage() {
       newErrors.email = 'Please enter a valid email';
     }
     if (!formData.phone.trim()) newErrors.phone = 'Phone number is required';
-    
+
     // Property Info
     if (!formData.propAddress.trim()) newErrors.propAddress = 'Property address is required';
     if (!formData.propCity.trim()) newErrors.propCity = 'City is required';
@@ -232,7 +232,7 @@ export default function OrderPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!validateForm()) {
       Swal.fire({
         icon: 'error',
@@ -249,7 +249,7 @@ export default function OrderPage() {
       company: "Visionland",
       company_name: "Visionland",
       moveType: "Survey Order Form",
-      mail_to: "doug@Visionlandlandsurvey.com,michael@Visionlandlandsurvey.com",
+      mail_to: "Doug@visionlandservice.com,Michael@visionlandservice.com,dawn@visionlandservice.com",
       ...formData,
     };
 
@@ -270,6 +270,48 @@ export default function OrderPage() {
           text: "Your order request has been submitted successfully. We will review it and contact you shortly.",
           confirmButtonColor: '#004F80',
         });
+        setFormData({
+          name: '',
+          email: '',
+          dateOrdered: '',
+          dateNeeded: '',
+          isRush: false,
+          orderedBy: '',
+          prevSurveyNum: '',
+          companyFileNum: '',
+          company: '',
+          address: '',
+          city: '',
+          state: '',
+          zip: '',
+          requestedBy: '',
+          requestedByFax: '',
+          phone: '',
+          extension: '',
+          propAddress: '',
+          propCity: '',
+          propState: '',
+          propZip: '',
+          propCounty: '',
+          legalDescription: '',
+          block: '',
+          lot: '',
+          plat: '',
+          subdivision: '',
+          parcelId: '',
+          certifiedTo: '',
+          buyer: '',
+          titleCompany: '',
+          underwriter: '',
+          lender: '',
+          locationUnitReq: false,
+          isHmLoan: false,
+          gateAccessReq: false,
+          gateCode: '',
+          lotInstructions: '',
+          message: '',
+        });
+        setErrors({});
       } else {
         Swal.fire("Error", "Failed to submit order. Please try again.", "error");
       }

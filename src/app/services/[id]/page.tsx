@@ -80,8 +80,8 @@ export default function ServiceDetailPage({ params }: { params: { id: string } }
                           0{i + 1}
                         </div>
                         <div>
-                          <p className="text-lg font-display font-700 text-navy-dark mt-1">{step}</p>
-                          <p className="text-sm text-gray-500 mt-2">Iterative verification ensures that this stage meets our precision standards before proceeding.</p>
+                          <p className="text-lg font-display font-700 text-navy-dark mt-1">{step.title}</p>
+                          <p className="text-sm text-gray-500 mt-2">{step.description}</p>
                         </div>
                       </div>
                     ))}

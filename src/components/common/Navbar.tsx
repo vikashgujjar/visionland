@@ -19,11 +19,12 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { href: '/', label: 'HOME' },
-    { href: '/about', label: 'ABOUT US' },
-    { href: '/quick-quote-leads', label: 'QUICK QUOTE LEADS' },
-    { href: '/aerial-drone-survey', label: 'AERIAL DRONE SURVEY*' },
-    { href: '/contact-us', label: 'CONTACT US' },
+    { href: '/', label: 'Home' },
+    { href: '/services', label: 'Services' },
+    { href: '/why-us', label: 'Why Us' },
+    { href: '/about', label: 'About' },
+    { href: '/unique-survey-sample', label: 'Unique Survey Sample' },
+    { href: '/contact-us', label: 'Contact' },
   ];
 
 
@@ -50,9 +51,9 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <img loading="lazy"
-              src="/logo.png"
+              src="/logo.webp"
               alt="Visionland"
-              className={`w-32 object-contain transition ${scrolled ? 'logo-light' : 'logo-light'
+              className={`w-56 object-contain transition ${scrolled ? 'logo-light' : 'logo-light'
                 }`}
             />
             {/* <div className="hidden sm:block">
@@ -96,7 +97,7 @@ export default function Navbar() {
               href="/order"
               className="hidden lg:inline-flex btn-brand items-center gap-2 px-5 py-2.5 rounded-xl text-sm"
             >
-              Order Online
+              Order Survey
               <svg
                 className="w-4 h-4"
                 fill="none"
@@ -179,7 +180,7 @@ export default function Navbar() {
               href="/order"
               className="btn-brand block text-center px-5 py-2.5 rounded-xl text-sm mt-2"
             >
-              Order Online
+              Order Survey
             </Link>
           </div>
         )}

@@ -21,7 +21,7 @@ export default function Services({
         id="services"
         style={{
           background: variant === 'page' ? '#ffffff' : 'linear-gradient(180deg,#eaf4ff 0%,#f5faff 100%)',
-          padding: hideHeader ? '3rem 0 6rem' : '6rem 0',
+          padding: hideHeader ? '3rem 0 3rem' : '3rem 0',
           position: 'relative',
           overflow: 'hidden',
         }}
@@ -75,7 +75,6 @@ export default function Services({
                 return (
                   <div
                     key={service.id}
-                    onClick={() => setActiveModal(service.id)}
                     className="flex flex-col lg:flex-row gap-8 items-center reveal bg-white rounded-[2.5rem] p-4 lg:p-8 hover:shadow-2xl transition-all duration-500 border border-blue-50/50 group cursor-pointer"
                     style={{ transitionDelay: `${index * 0.1}s` }}
                   >
@@ -125,7 +124,8 @@ export default function Services({
                           </svg>
                         </Link>
 
-                        <div className="flex items-center gap-2 text-sm font-display font-700 text-blue-400 group-hover:text-blue-600 transition-colors">
+                        <div
+                          onClick={() => setActiveModal(service.id)} className="flex items-center gap-2 text-sm font-display font-700 text-blue-400 group-hover:text-blue-600 transition-colors">
                           <span className="w-2 h-2 rounded-full bg-blue-400"></span>
                           Precision Guaranteed
                         </div>

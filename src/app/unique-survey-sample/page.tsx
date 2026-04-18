@@ -21,7 +21,7 @@ export default function UniqueSurveySamplePage() {
       {/* PDF Sample Trigger Section */}
       <div className="max-w-7xl mx-auto px-4 text-center mt-[-100px]">
         <a
-          href="/POINTOFINTEREST.pdf"
+          href="/POINTOFINTEREST.pdf?559"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block group reveal"
@@ -30,7 +30,7 @@ export default function UniqueSurveySamplePage() {
             <div className="w-20 h-20 bg-white p-3 text-white rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl shadow-brand/20 group-hover:scale-110 transition-transform duration-500">
               {/* <FileText className="w-10 h-10" /> */}
               <img loading="lazy"
-                src="/HoomeSurvey.png"
+                src="/HoomeSurvey.webp"
                 alt="Visionland" />
             </div>
             <h3 className="font-display font-800 text-lg text-navy-dark mb-2">Sample Points of Interest</h3>

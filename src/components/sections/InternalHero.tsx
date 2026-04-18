@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 interface InternalHeroProps {
   title: string;
@@ -9,9 +10,16 @@ interface InternalHeroProps {
 }
 
 export default function InternalHero({ title, subtitle, breadcrumb = 'Services' }: InternalHeroProps) {
+  const pathname = usePathname();
+  // More robust detection: check pathname, breadcrumb, and title
+  const isUniqueSurvey = 
+    pathname?.includes('unique-survey-sample') || 
+    breadcrumb?.toLowerCase().includes('survey') ||
+    title?.toLowerCase().includes('unique survey');
+
   return (
     <section
-      className="relative pt-44 pb-32 overflow-hidden scanline-wrap"
+      className={`relative pt-28 ${isUniqueSurvey ? 'pb-32' : 'pb-12'} overflow-hidden scanline-wrap`}
       style={{
         /* CHANGED: #030d16 dark → #eef6ff light blue */
         background: `radial-gradient(ellipse at 65% 40%,rgba(0,79,128,0.12) 0%,transparent 60%),radial-gradient(ellipse at 10% 80%,rgba(0,102,166,0.07) 0%,transparent 55%),#eef6ff`,
